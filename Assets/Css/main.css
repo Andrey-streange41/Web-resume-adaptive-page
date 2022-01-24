@@ -8,6 +8,7 @@
   --font-size: 16px;
   --header-height: 700px;
   --theme-blue-color: #34547a;
+  background-color: #ffffff;
 }
 
 .header-block {
@@ -91,22 +92,221 @@
   margin-bottom: 7%;
 }
 
-.avatar
-{
-    height: 450px;
-    width: 555px;
-    border-radius: 0px;
-    background-color: #C4C4C4;
-}
+
 
 .container-3
 {
-    margin:0 auto;
-    border: green solid 2px;
+    margin:5% auto;
+   
+    overflow: hidden;
 }
 
+.avatar-wrapper
+{
+  
+    width: 340px;
+    height: 350px;
+    max-height:450px;
+    max-width:555px;
+   
 
+    background-image: url(../../images/avatar.png);
+    background-position: center;
+    background-size: cover;
+}
 
+.skils-wraper
+{
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 5%;
+  font-family:"Roboto";
+  font-size: 1em;
+  margin-bottom: 3%;
+  color: #727272;
+  font-weight: 400;
+  padding: 5% 20%;
+}
+
+.rectangle-grey
+{
+  margin: 3% 0;
+  flex-basis: 100%;
+  height: 4px;
+  background: #C4C4C4;
+  
+}
+
+.rectangle-blue
+{
+  
+  width: 80%;
+  height: 4px;
+  background: #34547A;
+ 
+}
+
+.skils-wraper>h3{
+  font-size: 2em;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 4%;
+}
+
+.container-4-article-wrapper
+{
+  background-color: #EEEFF1;
+}
+
+.flex-container-projects
+{
+    margin-top: 2%;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center ;
+    margin-bottom: 3%;
+}
+
+.video-padding
+{
+  padding-bottom: 8%;
+}
+
+.odd
+{
+  height: 50%;
+  width: 25%;
+  background-image: url(../../images/Screenshot_20220124_195622.png);
+}
+
+.even
+{
+  height: 50%;
+  width: 25%;
+  background-image: url(../../images//Screenshot_20220124_195645.png);
+}
+
+.ayse
+{
+  background-image: url(../../images/ayse.png);
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+  background-position: center;
+  background-size: cover;
+}
+
+.microsoft-container
+{
+  margin-top: 10%;
+  margin-bottom:10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.microsoft-item
+{
+  max-width: 15%;
+  max-height: 40%;
+}
+
+.my-5
+{
+  background-color: #EEEFF1;
+}
+
+.client-form
+{
+  padding-bottom: 5%;
+}
+
+.form-part-1
+{
+  display:flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.form-part-1-item
+{
+  padding: 20px 15px;
+}
+
+.buttonSubmit
+{
+  margin:5% 30%;
+  padding: 15px 50px;
+  background-color: #34547A;
+  color: whitesmoke;
+  font-family: inherit;
+  
+}
+
+#story2
+{
+  display:none;
+}
+
+.page-footer
+{
+  background-color: #EEEFF1;
+}
+
+.footer-section
+{
+  background-color: #34547A;
+  color: whitesmoke;
+  font-family: inherit;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+
+.footer-container
+{
+  width: 80%;
+  height: 100%;
+  margin-left:10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#second-my-5
+{
+  margin-bottom: 0px;
+  background-color: #EEEFF1;
+}
+
+.wk-img
+{
+  width: 5vw;
+  height: 9vh;
+}
+
+.flex-c-1
+{
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+}
+
+.flex-c-1>h2{
+  font-weight: 500;
+  font-size: 1.5em;
+}
 @media screen and (max-width: 576px) {
   .nout {
     padding: 0px;
@@ -137,6 +337,32 @@
   {
       text-align: center;
       margin-top: 5%;
+  }
+  .form-part-1
+  {
+    display: block;
+    text-align: center;
+  }
+  #story
+  {
+    margin-left:25% ;
+    display: none;
+  }
+  #story2
+  {
+    display: block;
+  }
+  .buttonSubmit
+  {
+    margin:5% 12%;
+  }
+  .flex-c-1
+  {
+    font-size: 0.5em;
+  }
+  .header-nav-ul-link
+  {
+    font-size: 0.5em;
   }
 }
 
@@ -178,6 +404,29 @@
   .header-text {
     width: 540px;
   }
+
 }
 
+@media screen and (max-width: 1200px) 
+{
+  .header-nav-ul-link
+  {
+    font-size: 0.8em;
+  }
+}
 
+@media screen and (max-width: 980px) 
+{
+  .header-nav-ul-link
+  {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1200px) 
+{
+  .header-text
+  {
+    padding-right:5%;
+  }
+}
